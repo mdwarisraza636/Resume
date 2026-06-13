@@ -1,63 +1,68 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MD WARIS RAZA - Accountant Resume</title>
+<title>MD WARIS RAZA | Accountant</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    background:#dff3ff;
+    background:#d9f1ff;
     padding:30px;
 }
 
 .resume{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
-    background:white;
     display:grid;
-    grid-template-columns:300px 1fr;
-    box-shadow:0 0 20px rgba(0,0,0,0.15);
-    border-radius:15px;
+    grid-template-columns:320px 1fr;
+    background:#fff;
+    border-radius:20px;
     overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.12);
 }
 
-.sidebar{
-    background:#0b4f6c;
+/* LEFT SIDE */
+
+.left{
+    background:#0f4c75;
     color:white;
-    padding:30px;
+    padding:35px;
 }
 
 .profile{
     text-align:center;
-    margin-bottom:25px;
+    margin-bottom:30px;
 }
 
 .profile img{
-    width:160px;
-    height:160px;
+    width:180px;
+    height:180px;
     border-radius:50%;
-    border:5px solid #dff3ff;
     object-fit:cover;
+    border:6px solid #ffffff;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
 }
 
 .name{
-    margin-top:15px;
+    margin-top:18px;
     font-size:28px;
-    font-weight:bold;
+    font-weight:700;
     line-height:1.2;
 }
 
-.title{
-    color:#bde7ff;
-    margin-top:5px;
+.designation{
+    color:#c7ebff;
+    margin-top:8px;
     font-size:15px;
 }
 
@@ -66,93 +71,115 @@ body{
 }
 
 .section h3{
-    color:#bde7ff;
-    border-bottom:2px solid #bde7ff;
-    padding-bottom:6px;
-    margin-bottom:12px;
-    font-size:18px;
-}
-
-.section p,
-.section li{
-    font-size:14px;
-    line-height:1.8;
+    color:#9fe3ff;
+    border-bottom:2px solid #9fe3ff;
+    padding-bottom:8px;
+    margin-bottom:15px;
 }
 
 .section ul{
     padding-left:18px;
 }
 
-.main{
+.section li{
+    margin-bottom:8px;
+    line-height:1.6;
+    font-size:14px;
+}
+
+.contact p{
+    margin-bottom:10px;
+    line-height:1.7;
+    font-size:14px;
+}
+
+/* RIGHT SIDE */
+
+.right{
     padding:40px;
 }
 
-.main-section{
-    margin-bottom:30px;
-}
-
-.main-section h2{
-    color:#0b4f6c;
-    border-bottom:3px solid #0b4f6c;
+.heading{
+    color:#0f4c75;
+    border-bottom:3px solid #0f4c75;
     padding-bottom:8px;
     margin-bottom:15px;
 }
 
 .summary{
+    color:#444;
     line-height:1.8;
-    color:#333;
+    margin-bottom:30px;
 }
 
 .job{
-    margin-bottom:25px;
+    margin-bottom:30px;
 }
 
 .job-title{
-    font-size:18px;
-    font-weight:bold;
-    color:#0b4f6c;
+    font-size:22px;
+    color:#0f4c75;
+    font-weight:700;
 }
 
 .company{
-    font-weight:600;
-    color:#555;
-    margin:5px 0;
+    font-size:16px;
+    color:#666;
+    margin-top:5px;
+    margin-bottom:5px;
 }
 
 .date{
-    color:#777;
-    font-size:14px;
-    margin-bottom:10px;
+    color:#888;
+    margin-bottom:15px;
 }
 
 .job ul{
-    padding-left:20px;
+    padding-left:22px;
 }
 
 .job li{
-    margin-bottom:8px;
+    margin-bottom:10px;
     line-height:1.7;
+    color:#444;
+}
+
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill-tags span{
+    background:#e7f7ff;
+    color:#0f4c75;
+    padding:8px 12px;
+    border-radius:25px;
+    font-size:14px;
+    font-weight:600;
 }
 
 .education{
     line-height:1.8;
+    color:#444;
 }
 
-.highlight{
-    color:#0b4f6c;
-    font-weight:600;
+.cert li{
+    margin-bottom:10px;
 }
 
-@media print{
-    body{
-        padding:0;
-        background:white;
-    }
+@media(max-width:900px){
 
-    .resume{
-        box-shadow:none;
-    }
+.resume{
+grid-template-columns:1fr;
 }
+
+.left{
+text-align:left;
+}
+
+}
+
 </style>
 </head>
 
@@ -160,173 +187,176 @@ body{
 
 <div class="resume">
 
-    <!-- LEFT SIDEBAR -->
+<!-- LEFT COLUMN -->
 
-    <div class="sidebar">
+<div class="left">
 
-        <div class="profile">
-            <!-- Replace image path -->
-            <img src="profile.jpg" alt="Profile Picture">
+<div class="profile">
 
-            <div class="name">
-                MD WARIS RAZA
-            </div>
+<!-- Put your image file in same folder and name it profile.jpg -->
 
-            <div class="title">
-                Accountant
-            </div>
-        </div>
+<img src="profile.jpg" alt="MD WARIS RAZA">
 
-        <div class="section">
-            <h3>Contact</h3>
-            <p>📍 Ranchi, Jharkhand</p>
-            <p>📞 +91 8521844812</p>
-            <p>✉️ mdwarisraza636@gmail.com</p>
-        </div>
+<div class="name">
+MD WARIS RAZA
+</div>
 
-        <div class="section">
-            <h3>Core Skills</h3>
+<div class="designation">
+Accountant | Taxation & Compliance Professional
+</div>
 
-            <ul>
-                <li>Accounts Payable (AP)</li>
-                <li>Accounts Receivable (AR)</li>
-                <li>General Ledger</li>
-                <li>Journal Entries</li>
-                <li>Trial Balance</li>
-                <li>Bank Reconciliation</li>
-                <li>Vendor Reconciliation</li>
-                <li>GST Compliance</li>
-                <li>TDS Compliance</li>
-                <li>ITR Filing</li>
-                <li>ROC Compliance</li>
-                <li>Statutory Audit</li>
-                <li>Tax Audit</li>
-                <li>Financial Statements</li>
-                <li>Tally Prime</li>
-                <li>Microsoft Excel</li>
-            </ul>
-        </div>
+</div>
 
-        <div class="section">
-            <h3>Certifications</h3>
+<div class="section contact">
+<h3>CONTACT</h3>
 
-            <ul>
-                <li>Tally Prime Certification</li>
-                <li>Advanced Excel Certification</li>
-                <li>GST Certification</li>
-            </ul>
-        </div>
+<p>📍 Ranchi, Jharkhand, India</p>
+<p>📞 +91 8521844812</p>
+<p>✉️ mdwarisraza636@gmail.com</p>
 
-        <div class="section">
-            <h3>Languages</h3>
+</div>
 
-            <ul>
-                <li>English</li>
-                <li>Hindi</li>
-                <li>Urdu</li>
-            </ul>
-        </div>
+<div class="section">
+<h3>CORE SKILLS</h3>
 
-    </div>
+<ul>
+<li>Accounts Payable (AP)</li>
+<li>Accounts Receivable (AR)</li>
+<li>General Ledger</li>
+<li>Journal Entries</li>
+<li>Trial Balance</li>
+<li>Financial Statements</li>
+<li>Bank Reconciliation</li>
+<li>Vendor Reconciliation</li>
+<li>GST Compliance</li>
+<li>TDS Compliance</li>
+<li>ITR Filing</li>
+<li>ROC Compliance</li>
+<li>Statutory Audit</li>
+<li>Tax Audit</li>
+<li>Tally Prime</li>
+<li>Microsoft Excel</li>
+</ul>
 
-    <!-- MAIN CONTENT -->
+</div>
 
-    <div class="main">
+<div class="section cert">
+<h3>CERTIFICATIONS</h3>
 
-        <div class="main-section">
-            <h2>Professional Summary</h2>
+<ul>
+<li>Tally Prime Certification</li>
+<li>Advanced Microsoft Excel Certification</li>
+<li>GST Certification Course</li>
+</ul>
 
-            <p class="summary">
-                Detail-oriented Accountant with over 2 years of experience specializing in corporate accounting, taxation, GST compliance, Income Tax filings, ROC compliance, and financial reporting. Experienced in Accounts Payable (AP), Accounts Receivable (AR), General Ledger Management, Trial Balance preparation, Journal Entries, Bank Reconciliation, Vendor Reconciliation, and statutory audit support. Proficient in Tally Prime and Advanced Microsoft Excel with strong client coordination and regulatory compliance expertise.
-            </p>
-        </div>
+</div>
 
-        <div class="main-section">
-            <h2>Professional Experience</h2>
+<div class="section">
+<h3>LANGUAGES</h3>
 
-            <div class="job">
+<ul>
+<li>English</li>
+<li>Hindi</li>
+<li>Urdu</li>
+</ul>
 
-                <div class="job-title">
-                    Accountant
-                </div>
+</div>
 
-                <div class="company">
-                    Ashish Udeep & Associates, Chartered Accountants
-                </div>
+</div>
 
-                <div class="date">
-                    May 2024 – Present | Ranchi, India
-                </div>
+<!-- RIGHT COLUMN -->
 
-                <ul>
-                    <li>Maintained books of accounts for individuals, firms, LLPs and companies.</li>
+<div class="right">
 
-                    <li>Managed General Ledger accounting and passed Journal Entries.</li>
+<h2 class="heading">PROFESSIONAL SUMMARY</h2>
 
-                    <li>Prepared Trial Balance, Balance Sheet, Profit & Loss Account and financial reports.</li>
+<p class="summary">
 
-                    <li>Performed Bank Reconciliation and Vendor Reconciliation.</li>
+Detail-oriented Accountant with over 2 years of experience specializing in corporate accounting, tax compliance, and regulatory frameworks. Proven expertise handling end-to-end bookkeeping, GST/TDS compliance, Income Tax filings, and Registrar of Companies (ROC) regulations. Adept at managing Accounts Payable (AP), Accounts Receivable (AR), ledger scrutiny, and assisting with statutory and tax audits. Highly proficient in Tally Prime and Advanced Microsoft Excel, with a strong track record of maintaining financial accuracy and seamless client coordination.
 
-                    <li>Handled GST Registration, GST Return Filing and GST Compliance activities.</li>
+</p>
 
-                    <li>Prepared and filed Income Tax Returns (ITR).</li>
+<h2 class="heading">PROFESSIONAL EXPERIENCE</h2>
 
-                    <li>Assisted in TDS calculations and compliance documentation.</li>
+<div class="job">
 
-                    <li>Supported Statutory Audit and Tax Audit assignments.</li>
+<div class="job-title">
+Accountant
+</div>
 
-                    <li>Handled Company Incorporation and ROC Compliance procedures.</li>
+<div class="company">
+Ashish Udeep & Associates, Chartered Accountants | Ranchi
+</div>
 
-                    <li>Coordinated directly with clients for accounting and compliance matters.</li>
-                </ul>
+<div class="date">
+May 2024 – Present
+</div>
 
-            </div>
-        </div>
+<ul>
 
-        <div class="main-section">
-            <h2>Technical Skills</h2>
+<li>Maintained books of accounts and managed General Ledger accounting for individuals, firms, LLPs, and companies.</li>
 
-            <p>
-                <span class="highlight">Accounting Software:</span>
-                Tally Prime
-            </p>
+<li>Passed accounting Journal Entries and prepared Trial Balance, Balance Sheet, and Profit & Loss Account.</li>
 
-            <p>
-                <span class="highlight">Microsoft Office:</span>
-                Advanced Excel, MS Word
-            </p>
+<li>Performed Bank Reconciliation and Vendor Reconciliation activities to ensure financial accuracy.</li>
 
-            <p>
-                <span class="highlight">Government Portals:</span>
-                GST Portal, Income Tax Portal, MCA Portal
-            </p>
-        </div>
+<li>Handled GST Registration, GST Return Filing, and GST Compliance assignments.</li>
 
-        <div class="main-section">
-            <h2>Education</h2>
+<li>Prepared and filed Income Tax Returns (ITR) and assisted in TDS compliance.</li>
 
-            <div class="education">
+<li>Supported Statutory Audits and Tax Audits for various business entities.</li>
 
-                <strong>Bachelor of Commerce (B.Com)</strong>
+<li>Managed ROC compliance and company incorporation procedures through MCA Portal.</li>
 
-                <br>
+<li>Conducted ledger scrutiny and coordinated directly with clients for documentation and compliance requirements.</li>
 
-                [College Name]
+<li>Assisted senior professionals in accounting, taxation, auditing, and regulatory compliance projects.</li>
 
-                <br>
+</ul>
 
-                [University Name]
+</div>
 
-                <br>
+<h2 class="heading">TECHNICAL SKILLS</h2>
 
-                Graduation Year: [Year]
+<div class="skill-tags">
 
-            </div>
-        </div>
+<span>Tally Prime</span>
+<span>Advanced Excel</span>
+<span>MS Word</span>
+<span>GST Portal</span>
+<span>Income Tax Portal</span>
+<span>MCA Portal</span>
+<span>Financial Reporting</span>
+<span>Bookkeeping</span>
 
-    </div>
+</div>
+
+<br><br>
+
+<h2 class="heading">EDUCATION</h2>
+
+<div class="education">
+
+<strong>Bachelor of Commerce (B.Com)</strong>
+
+<br>
+
+[College Name]
+
+<br>
+
+[University Name]
+
+<br>
+
+Graduation Year: [Year]
+
+</div>
+
+</div>
 
 </div>
 
 </body>
 </html>
+```
