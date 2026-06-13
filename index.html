@@ -149,7 +149,31 @@ body{
     flex-wrap:wrap;
     gap:10px;
 }
+.resume-buttons{
+    margin-top:15px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+}
 
+.btn{
+    width:180px;
+    text-align:center;
+    background:#9fe3ff;
+    color:#0f4c75;
+    text-decoration:none;
+    padding:10px;
+    border-radius:25px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ffffff;
+    color:#0f4c75;
+    transform:translateY(-2px);
+}
 .skill-tags span{
     background:#e7f7ff;
     color:#0f4c75;
@@ -196,7 +220,17 @@ text-align:left;
 <!-- Put your image file in same folder and name it profile.jpg -->
 
 <img src="profile.jpeg" alt="MD WARIS RAZA">
+<div class="resume-buttons">
 
+    <a href="resume.pdf" target="_blank" class="btn">
+        View Resume
+    </a>
+
+    <a href="resume.pdf" download class="btn">
+        Download PDF
+    </a>
+
+</div>
 <div class="name">
 MD WARIS RAZA
 </div>
